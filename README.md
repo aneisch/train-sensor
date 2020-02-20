@@ -1,5 +1,4 @@
 # Train Sensor
-# Informed Delivery Home Assistant
 <a href="https://www.buymeacoffee.com/aneisch" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-black.png" width="150px" height="35px" alt="Buy Me A Coffee" style="height: 35px !important;width: 150px !important;" ></a><br>
 
 Uses [RTL_FM](http://kmkeen.com/rtl-demod-guide/2013-01-02-17-54-37-499.html) and SDR to detect passing locomotives [end of train device (EOTD)](https://www.sigidwiki.com/wiki/End_of_Train_Device_(EOTD)) and publish messages to 
