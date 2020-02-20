@@ -3,7 +3,7 @@
 <a href="https://www.buymeacoffee.com/aneisch" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-black.png" width="150px" height="35px" alt="Buy Me A Coffee" style="height: 35px !important;width: 150px !important;" ></a><br>
 
 Uses [RTL_FM](http://kmkeen.com/rtl-demod-guide/2013-01-02-17-54-37-499.html) and SDR to detect passing locomotives [end of train device (EOTD)](https://www.sigidwiki.com/wiki/End_of_Train_Device_(EOTD)) and publish messages to 
-MQTT. Monitors head of train at `452.9375` by default. You can tune to `457.9375` for end of train detection. 
+MQTT. Monitors head of train at `452.9375`MHz by default. You can tune to `457.9375`MHz for end of train detection. 
 
 https://hub.docker.com/r/aneisch/train-sensor
 
