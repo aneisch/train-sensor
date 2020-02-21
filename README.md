@@ -4,7 +4,7 @@
 Uses [RTL_FM](http://kmkeen.com/rtl-demod-guide/2013-01-02-17-54-37-499.html) and SDR to detect passing locomotives [end of train device (EOTD)](https://www.sigidwiki.com/wiki/End_of_Train_Device_(EOTD)) and publish messages to 
 MQTT. Monitors head of train at `452.9375`MHz by default. You can tune to `457.9375`MHz for end of train detection. 
 
-Optimum squelch value will vary greatly based on antenna, distance from locomotive, etc. Once the container is running, for the initial squelch tuning I recommend using `docker exec -it tcontainer_name /bin/bash`, executing `pkill rtl_fm` inside the container and manually running `rtl_fm -f $FREQUENCY -M fm -l $SQUELCH`. Lower the squelch value until you begin picking up noise, and then raise it slightly to silence it again. This will be a good starting point!
+Optimum squelch value will vary greatly based on antenna, distance from locomotive, etc. Once the container is running, for the initial squelch tuning I recommend using `docker exec -it tcontainer_name /bin/bash`, executing `pkill rtl_fm` inside the container and manually running `rtl_fm -f $FREQUENCY -M fm -l $SQUELCH`. Lower the squelch value until you begin picking up noise, and then raise it slightly to suppress the noise again. This will be a good starting point!
 
 https://hub.docker.com/r/aneisch/train-sensor
 
