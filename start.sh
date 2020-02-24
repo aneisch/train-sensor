@@ -8,4 +8,4 @@ rtl_fm -f $FREQUENCY -M fm -l $SQUELCH | xxd | tee -a output.txt >> /dev/null 2>
 /script.sh &
 
 # Make the script stay "running"
-cat
+while true; do :; done & kill -STOP $! && wait $!
