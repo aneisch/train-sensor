@@ -41,3 +41,4 @@ variable | default | description
 `MQTT_HOST` | 10.0.1.22 | MQTT server address/hostname
 `MQTT_PORT` | 1883 | MQTT server port (non-ssl)
 `MQTT_TOPIC` | sensor/train | Topic where train detection will be published. Publishes `1` when detected.
+`HOLDOFF_TIME` | 600 | Time in seconds to prevent trigger after a detection
