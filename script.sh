@@ -12,8 +12,8 @@ while true; do
 
   else
     mosquitto_pub -h $MQTT_HOST -p $MQTT_PORT -t $MQTT_TOPIC -m 1
+    sleep $HOLDOFF_TIME
     echo > output.txt
     ORIG_SIZE=$(wc -l /output.txt | cut -f1 -d' ')
-    sleep $HOLDOFF_TIME
   fi
 done
