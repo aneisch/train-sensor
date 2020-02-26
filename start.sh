@@ -3,7 +3,7 @@
 # Monitor frequency and output to file
 # Head of train: 452937500
 # End of train: 457937500
-rtl_fm -f $FREQUENCY -M fm -l $SQUELCH | xxd | tee -a output.txt >> /dev/null &
+rtl_fm -f $FREQUENCY -M fm -l $SQUELCH -g -9.9 | xxd | tee -a output.txt >> /dev/null &
 
 /script.sh &
 
