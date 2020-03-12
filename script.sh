@@ -8,7 +8,7 @@ ORIG_SIZE=$(wc -l /output.txt | cut -f1 -d' ')
 while true; do
   CUR_SIZE=$(wc -l /output.txt | cut -f1 -d' ')
   if [ "$ORIG_SIZE" == "$CUR_SIZE" ]; then
-    sleep 10
+    sleep 30
   else
     mosquitto_pub -h $MQTT_HOST -p $MQTT_PORT -t $MQTT_TOPIC -m 1
     sleep $HOLDOFF_TIME
