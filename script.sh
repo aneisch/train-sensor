@@ -18,7 +18,7 @@ while true; do
     mosquitto_pub -h $MQTT_HOST -p $MQTT_PORT -t $MQTT_TOPIC -m 1
     pkill rtl_fm
     sleep $HOLDOFF_TIME
-    rtl_fm -f $FREQUENCY -M fm -l $SQUELCH -g -4 | xxd | tee -a output.txt >> /dev/null &
+    rtl_fm -d $DEVICE_INDEX -f $FREQUENCY -M fm -l $SQUELCH -g -4 | xxd | tee -a output.txt >> /dev/null &
     sleep 1
     echo > output.txt
     ORIG_SIZE=$(wc -l /output.txt | cut -f1 -d' ')
