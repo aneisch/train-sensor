@@ -30,6 +30,7 @@ COPY start.sh /start.sh
 RUN chmod +x /script.sh
 RUN chmod +x /start.sh
 
+LD_LIBRARY_PATH=/usr/local/lib64/
 ENV DEVICE_INDEX=0
 ENV FREQUENCY 452937500
 ENV SQUELCH 120
