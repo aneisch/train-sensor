@@ -30,6 +30,7 @@ COPY start.sh /start.sh
 RUN chmod +x /script.sh
 RUN chmod +x /start.sh
 
+ENV DEVICE_INDEX=0
 ENV FREQUENCY 452937500
 ENV SQUELCH 120
 ENV MQTT_HOST 10.0.1.22

@@ -6,7 +6,7 @@
 # Monitor frequency and output to file
 # Head of train: 452937500
 # End of train: 457937500
-rtl_fm -f $FREQUENCY -M fm -l $SQUELCH -g -4 | xxd | tee -a output.txt >> /dev/null &
+rtl_fm -d $DEVICE_INDEX -f $FREQUENCY -M fm -l $SQUELCH -g -4 | xxd | tee -a output.txt >> /dev/null &
 
 ORIG_SIZE=$(wc -l /output.txt | cut -f1 -d' ')
 

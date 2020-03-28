@@ -36,6 +36,7 @@ You only need to specify the environmental variables in `docker run` or your doc
 
 variable | default | description
 -- | -- | --
+`DEVICE_INDEX` | 0 | SDR device index
 `FREQUENCY` | 452.9375 | MQTT server address
 `SQUELCH` | 120 | Squelch level
 `MQTT_HOST` | 10.0.1.22 | MQTT server address/hostname
