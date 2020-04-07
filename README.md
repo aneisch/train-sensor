@@ -31,6 +31,8 @@ docker run -d --name train-sensor --device='/dev/rtl_sdr:/dev/bus/usb/001/005' \
 -e SQUELCH=90 aneisch/train-sensor
 ```
 
+Note: The rtl_fm process will run as an unprivileged user. Ensure you grant access to your SDR dongle. 
+
 ### Environmental Variables
 You only need to specify the environmental variables in `docker run` or your docker-compose file that you want/need to override:
 
